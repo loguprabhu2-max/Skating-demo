@@ -67,4 +67,31 @@ document.addEventListener('DOMContentLoaded',function(){
     demo.forEach(r=>{const tr=document.createElement('tr');tr.innerHTML=`<td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td>`;studentsTable.appendChild(tr);});
   }
 
+  // Diet plan payment modal handling
+  document.querySelectorAll('.getPlanBtn').forEach(btn=>{
+    btn.addEventListener('click', (e)=>{
+      const plan = btn.dataset.plan || 'Plan';
+      const amount = btn.dataset.amount || '0';
+      const modalEl = document.getElementById('planPaymentModal');
+      if(modalEl){
+        const planNameEl = modalEl.querySelector('#planNameDisplay');
+        const planAmountEl = modalEl.querySelector('#planAmountDisplay');
+        planNameEl && (planNameEl.innerText = plan);
+        planAmountEl && (planAmountEl.innerText = amount === '0' ? 'Free' : '₹'+amount);
+        new bootstrap.Modal(modalEl).show();
+      }
+    });
+  });
+
+  document.querySelectorAll('.paymentSubmitBtn').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const method = b.dataset.method || 'Payment';
+      const plan = document.getElementById('planNameDisplay') ? document.getElementById('planNameDisplay').innerText : 'Plan';
+      alert(`Payment demo: ${method} for ${plan} — no real payment processed.`);
+      const modal = document.getElementById('planPaymentModal');
+      const inst = bootstrap.Modal.getInstance(modal);
+      if(inst) inst.hide();
+    });
+  });
+
 });
