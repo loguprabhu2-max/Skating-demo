@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Skate Academy — Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-darkblue py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <div class="logo-mark">🛼</div>
+          <div class="ms-2 text-yellow fw-bold">The Skate Academy</div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="videos.html">Training Videos</a></li>
+            <li class="nav-item"><a class="nav-link" href="diet.html">Diet Plans</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
+            <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+            <li class="nav-item ms-3"><a class="btn btn-yellow btn-sm" href="#">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" style="background-image: url('assets/images/hero.svg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7 text-white">
+            <h1 class="display-5 fw-bold">Skate Towards Greatness</h1>
+            <p class="lead mb-4">Join The Skate Academy and become part of a passionate community.</p>
+            <a class="btn btn-yellow btn-lg me-2" href="classes.html">Join A Class</a>
+            <a class="btn btn-outline-light btn-lg" href="events.html">Explore Events</a>
+            <div class="mt-4 d-flex stats gap-4">
+              <div><strong>20+</strong><div class="small">Coaches</div></div>
+              <div><strong>500+</strong><div class="small">Students</div></div>
+              <div><strong>50+</strong><div class="small">Events</div></div>
+            </div>
+          </div>
+          <div class="col-md-5 d-none d-md-block">
+            <div class="card glass p-3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Roller_speed_skating_at_the_2018_Summer_Youth_Olympics_%E2%80%93_Girls_031.jpg" class="img-fluid rounded" alt="skate">
+              <div class="p-3">
+                <h5>Basic Skating Techniques</h5>
+                <p class="small text-muted">Free · 10:25</p>
+                <a class="btn btn-sm btn-outline-light" href="videos.html">Watch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Programs -->
+    <section class="py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h3>Programs for All Ages & Levels</h3>
+          <a href="classes.html">View All Programs</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3">
+            <div class="card glass hover-up">
+              <img src="https://thumbs.dreamstime.com/b/rollerblade-boy-6951668.jpg?w=768" class="card-img-top" alt="beginner">
+              <div class="card-body">
+                <h5 class="card-title">Beginner</h5>
+                <p class="card-text small">Age 4+</p>
+                <a href="classes.html" class="btn btn-sm btn-yellow">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card glass hover-up">
+              <img src="https://www.shutterstock.com/image-vector/little-kid-playing-roller-blade-260nw-2350636191.jpg" class="card-img-top" alt="intermediate">
+              <div class="card-body">
+                <h5 class="card-title">Intermediate</h5>
+                <p class="card-text small">Age 8+</p>
+                <a href="classes.html" class="btn btn-sm btn-yellow">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card glass hover-up">
+              <img src="https://thumbs.dreamstime.com/b/group-children-roller-skating-vector-illustration-white-background-active-lifestyle-concept-450600595.jpg" class="card-img-top" alt="advanced">
+              <div class="card-body">
+                <h5 class="card-title">Advanced</h5>
+                <p class="card-text small">Age 12+</p>
+                <a href="classes.html" class="btn btn-sm btn-yellow">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card glass hover-up">
+              <img src="https://img.magnific.com/premium-vector/baton-rouge-girl-practices-speed-inline-skating-cartoon-style_1238364-31574.jpg?semt=ais_hybrid&w=740&q=80" class="card-img-top" alt="pro">
+              <div class="card-body">
+                <h5 class="card-title">Professional</h5>
+                <p class="card-text small">Age 16+</p>
+                <a href="classes.html" class="btn btn-sm btn-yellow">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h3>Upcoming Events</h3>
+          <a href="events.html">View All Events</a>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="card p-3 glass">
+              <div class="d-flex">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj1jQ1iRdf1wPG3E5n0o9UhF2PdjoBAl2HMw&s" width="90" class="rounded me-3" alt="event">
+                <div>
+                  <h6>Summer Skating Championship 2026</h6>
+                  <p class="small text-muted mb-1">25 May 2026 · coimbatore</p>
+                  <a href="events.html#register" class="btn btn-sm btn-outline-primary">Register Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-3 glass">
+              <div class="d-flex">
+                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/skating-party-flyer-design-template-ba634c74e4fefce30b4181370e0f11c7_screen.jpg?ts=1708201896" width="90" class="rounded me-3" alt="event">
+                <div>
+                  <h6>Inter-School Skating Competition</h6>
+                  <p class="small text-muted mb-1">10 Jun 2026 · chennai</p>
+                  <a href="events.html#register" class="btn btn-sm btn-outline-primary">Register Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-3 glass">
+              <div class="d-flex">
+                <img src="https://i.pinimg.com/564x/95/99/78/959978783b4005e8ad34dec92e3e3365.jpg" width="90" class="rounded me-3" alt="event">
+                <div>
+                  <h6>Skate Marathon 2026</h6>
+                  <p class="small text-muted mb-1">15 Jul 2026 · Madurai</p>
+                  <a href="events.html#register" class="btn btn-sm btn-outline-primary">Register Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Videos preview & Diet plans preview -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h4>Online Training Videos</h4>
+            <div class="d-flex gap-3 mt-3 flex-wrap">
+              <div class="card glass video-card p-2">
+                <img src="https://www.inlinespeedskater.com/wp-content/uploads/2023/12/5-essential-speed-skating-drills-for-beginners-780x470.jpg" class="rounded" width="160">
+                <div class="ms-2">
+                  <h6 class="mb-1">Speed Skating Drills <span class="badge bg-warning text-dark">Premium</span></h6>
+                  <p class="small text-muted">12:40</p>
+                </div>
+              </div>
+              <div class="card glass video-card p-2">
+                <img src="https://tidasports.com/wp-content/uploads/2026/02/Skating-Academy-3-1024x683.jpeg" class="rounded" width="160">
+                <div class="ms-2">
+                  <h6 class="mb-1">Endurance Training <span class="badge bg-warning text-dark">Premium</span></h6>
+                  <p class="small text-muted">15:30</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card glass p-4 text-center">
+              <h5>Become a Premium Member</h5>
+              <ul class="list-unstyled small text-start mt-3">
+                <li>• Access all premium videos</li>
+                <li>• New videos every week</li>
+                <li>• Download videos</li>
+              </ul>
+              <a class="btn btn-yellow mt-3" href="#">Go Premium</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials & FAQ -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h4>Testimonials</h4>
+            <div class="card glass p-3 mt-3">
+              <p>“The trainers at Skate Academy turned my skating around — incredible!”</p>
+              <p class="small text-muted">— Priya S.</p>
+            </div>
+            <div class="card glass p-3 mt-3">
+              <p>“Great coaching, friendly community and excellent facilities.”</p>
+              <p class="small text-muted">— Arun M.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4>FAQ</h4>
+            <div class="accordion mt-3" id="faq">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f1">What age is suitable?</button>
+                </h2>
+                <div id="f1" class="accordion-collapse collapse" data-bs-parent="#faq">
+                  <div class="accordion-body">Programs start from age 4 and go up to professional levels.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f2">Are there online videos?</button>
+                </h2>
+                <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                  <div class="accordion-body">Yes — we offer free and paid training videos with demos and drills.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="py-5">
+      <div class="container">
+        <h4>Contact Us</h4>
+        <div class="row">
+          <div class="col-md-6">
+            <form id="contactForm">
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="4" required></textarea>
+              </div>
+              <button class="btn btn-yellow">Send Message</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <div class="card glass p-4">
+              <h5>Contact Info</h5>
+              <p class="small text-muted mb-1">Phone: 9876543210</p>
+              <p class="small text-muted mb-1">Email: info@theskateacademy.in</p>
+              <p class="small text-muted">Location: Mumbai, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-darkblue text-light">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>© 2026 The Skate Academy</div>
+        <div class="socials">
+          <a class="text-light me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="text-light me-2" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="text-light" href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

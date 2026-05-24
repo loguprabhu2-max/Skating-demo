@@ -1,0 +1,23 @@
+:root{
+  --blue:#07294d;
+  --yellow:#ffc107;
+  --glass-bg: rgba(255,255,255,0.06);
+}
+body{font-family:Inter, system-ui, sans-serif;background:#f7f9fc;color:#122;
+}
+.bg-darkblue{background:linear-gradient(180deg,var(--blue),#031a33)!important}
+.text-yellow{color:var(--yellow)!important}
+.btn-yellow{background:var(--yellow);color:#07294d;border:none}
+.hero{padding:100px 0;background-size:cover;background-position:center;position:relative}
+.hero .overlay{position:absolute;inset:0;background:linear-gradient(90deg, rgba(7,41,77,0.6), rgba(3,26,51,0.6))}
+.hero .container{position:relative;z-index:2}
+.glass{background:linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.05);border-radius:12px}
+.hover-up{transition:transform .25s ease,box-shadow .25s ease}
+.hover-up:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(2,6,23,0.35)}
+.logo-mark{background:var(--yellow);color:var(--blue);padding:6px 8px;border-radius:6px}
+.stats div small{opacity:.85}
+.video-card{display:flex;align-items:center}
+.admin-root{min-height:100vh}
+.sidebar{width:220px;min-height:100vh}
+.card img{object-fit:cover}
+@media(max-width:768px){.hero{padding:60px 0}.sidebar{display:none}.admin-root{flex-direction:column}}
